@@ -6,7 +6,7 @@ searchInput.addEventListener("keyup", function (event) {
   for (let counter = 0; counter < allNameDOMCollection.length; counter++) {
     const currentName = allNameDOMCollection[counter].textContent.toLowerCase();
     if (currentName.includes(searchQuery)) {
-      allNameDOMCollection[counter].style.display = "block";
+      allNameDOMCollection[counter].style.display = "inline-block";
     } else {
       allNameDOMCollection[counter].style.display = "none";
     }
